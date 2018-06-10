@@ -22,22 +22,31 @@ module.exports = function(app, passport) {
      app.get('/dashboard', isLoggedIn, function (req, res) {
 
      console.log("apple");
-    //  var Sequelize = require('sequelize');
-    //  const Op = Sequelize.Op
+      var Sequelize = require('sequelize');
+      const Op = Sequelize.Op
+
+    console.log("B", req.user.ownerorsitter)
 
      db.AllUsers.findAll({
       where: {
         ownerorsitter: 
-        // {
-        //   [Op.ne]: 
-          "sitter"
-        // }
+         {
+           [Op.ne]: 
+           req.user.ownerorsitter
+         }
        }
       }).then(function(dbperson) {
         console.log("star")
-        console.log("HERE!!!!!!", dbperson)
-         res.json(dbperson);
+        res.setHeader('Content-Type', 'text/html');
+     
+
+        for (var i = 0; i < dbperson.length; i++) {
+         res.write("<div style='background-color: tan; color: pink; font-size: x-large; font-weight: bold'>" + "Email: " + dbperson[i].email + "<br>" + "Name: " + dbperson[i].userfullname + "<br>" + "Location: " + dbperson[i].usercity + "<br>" + "Owner or Sitter: " + dbperson[i].ownerorsitter + "<br><br><br></div>");
+      
+        }
+    
+       res.end();
+
       });
-    //  res.render('dashboard');
     });
   }
