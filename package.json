@@ -7,16 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fakenewz/noworriespetsitting.git"
-  },
+
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fakenewz/noworriespetsitting/issues"
-  },
-  "homepage": "https://github.com/fakenewz/noworriespetsitting#readme",
+  
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
