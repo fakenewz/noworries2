@@ -16,11 +16,11 @@ module.exports = function(app) {
  // });
 
   app.get("/signup", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/PetSitter-HTML-Working w_ tags/HTML/SignUp.html"),{});
+    res.sendFile(path.join(__dirname, "../views/PetSitter-HTML-Working w_ tags/HTML/Sign Up.html"),{});
   });
 
   app.get("/signin", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/signin.html"),{});
+    res.sendFile(path.join(__dirname, "../views/PetSitter-HTML-Working w_ tags/HTML/SignIn.html"),{});
   });
 
   app.get("/dashboard", function(req, res) {
@@ -32,3 +32,4 @@ module.exports = function(app) {
   });
 
 };
+

@@ -30,6 +30,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); 
 
 app.use(express.static("app/public"));
+app.use(express.static(__dirname + '/App/views/PetSitter-HTML-Working w_ tags/HTML'));
+
 
 require("./App/Routes/api-routes")(app);
 require("./App/Routes/html-routes")(app);
