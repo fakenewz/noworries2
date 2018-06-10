@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 7]>                  <html class="ie7 no-js" lang="en">     <![endif]-->
-<!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
+<html class="not-ie no-js" lang="en">
 <head>
 
 	<!-- Basic Page Needs
@@ -35,19 +33,8 @@
 	<link rel="stylesheet" href="css/theme-elements.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 
-
-
 	<!-- Head Libs -->
 	<script src="vendor/modernizr.js"></script>
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<script src="vendor/respond.min.js"></script>
-	<![endif]-->
-
-	<!--[if IE]>
-		<link rel="stylesheet" href="css/ie.css">
-	<![endif]-->
 
 	<!-- Favicons
 	================================================== -->
@@ -68,26 +55,14 @@
 			<!-- Header Top Bar -->
 			<div class="header-top">
 				<div class="container">
-					<!-- <div class="header-top-left">
-						<button class="btn btn-sm btn-default menu-link menu-link__secondary">
-							<i class="fa fa-list"></i>
-						</button>
-						<div class="menu-container">
-							<ul class="header-top-nav header-top-nav__secondary">
-								<li><a href="features-pricing-tables.html">Pricing</a></li>
-								<li><a href="#">Sitemap</a></li>
-								<li><a href="pages-faqs.html">FAQs</a></li>
-							</ul>
-						</div>
-					</div> -->
+					
 					<div class="header-top-right">
 						<button class="btn btn-sm btn-default menu-link menu-link__tertiary">
 							<i class="fa fa-user"></i>
 						</button>
 						<div class="menu-container">
 							<ul class="header-top-nav header-top-nav__tertiary">
-								<!-- <li><a href="page-login.html"><i class="fa-pencil-square-o fa"></i> Register</a></li> -->
-								<li><a href="page-login.html"><i class="fa-lock fa"></i> Login</a></li>
+								<li><a href="/signin"><i class="fa-lock fa" style='font-size: x-large;'></i> <span style='font-size: large; font-weight: bold'>Login</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -99,9 +74,7 @@
 				<div class="container">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html"><img src="images/homepageimage.jpeg" alt="No Worries PetSitter"></a>
-						<!-- <h1><a href="index.html"><span>Pet</span>Sitter</a></h1>
-						<p class="tagline">Find an Awesome PetSitter</p> -->
+						<a href="/"><img src="images/homepageimage.jpeg" alt="No Worries PetSitter"></a>
 					</div>
 					<!-- Logo / End -->
 
@@ -112,8 +85,8 @@
 			      <!-- Banner -->
 			      <div class="head-info">
 			      	<ul class="head-info-list">
-			      		<li><span>Call us on:</span> +1 (911) 123-4567</li>
-			      		<li><span>Email:</span> <a href="mailto:petsitter@petsitter.com">petsitter@petsitter.com</a></li>
+			      		<li><span>Call us on:</span> +0 (000) 000-0000</li>
+			      		<li><span>Email:</span>fakeemail@petsitter.com</li>
 			      	</ul>
 			      	<ul class="social-links">
 			      		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -129,11 +102,11 @@
 			</div>
 
 			<!-- Navigation -->
-			<nav class="nav-main">
+			<!-- <nav class="nav-main">
 				<div class="container">
 					<ul data-breakpoint="992" class="flexnav">
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="#">Pages</a>
+						<li class="active"><a href="/">Home</a></li>
+						<li><a href="/">Pages</a>
 							<ul>
 								<li><a href="page-about.html">About Us</a></li>
 								<li><a href="page-services.html">Services</a></li>
@@ -141,35 +114,6 @@
 								<li><a href="page-faqs.html">FAQs</a></li>
 							</ul>
 						</li>
-						<!-- <li><a href="#">Features</a>
-							<ul>
-								<li><a href="features-shortcodes.html">Shortcodes</a></li>
-								<li><a href="features-pricing-tables.html">Pricing Tables</a></li>
-								<li><a href="features-typography.html">Typography</a></li>
-								<li><a href="features-columns.html">Columns</a></li>
-								<li><a href="features-icons.html">Icons</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Pet Sitters</a>
-							<ul>
-								<li><a href="job-post-profile.html">Post a Profile</a></li>
-								<li><a href="job-post-job.html">Post a Job</a></li>
-								<li><a href="job-list.html">Pet Sitters List</a></li>
-								<li><a href="job-dashboard.html">Dashboard</a></li>
-								<li><a href="job-profile.html">Profile</a></li>
-							</ul>
-						</li>
-						<li><a href="portfolio-3cols.html">Portfolio</a>
-							<ul>
-								<li><a href="portfolio-2cols.html">Portfolio 2 cols</a></li>
-								<li><a href="portfolio-3cols.html">Portfolio 3 cols</a></li>
-								<li><a href="portfolio-4cols.html">Portfolio 4 cols</a></li>
-								<li><a href="portfolio-fullw.html">Portfolio Full Width</a></li>
-								<li><a href="portfolio-single-halfwidth.html">Single Half Width</a></li>
-								<li><a href="portfolio-single-fullwidth.html">Single Full Width</a></li>
-							</ul>
-						</li>
-						<li><a href="blog-right-sidebar.html">Blog</a>
 							<ul>
 								<li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
 								<li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
@@ -178,9 +122,9 @@
 							</ul>
 						</li>
 						<li><a href="contacts.html">Contacts</a></li> -->
-					</ul>
+					<!-- </ul>
 				</div>
-			</nav>
+			</nav> -->
 			<!-- Navigation / End -->
 
 		</header>
@@ -206,28 +150,6 @@
 							</li>
 						</ul>
 			
-						<!-- <div class="search-box">
-							<h2>Find an Awesome Pet Sitter Near You</h2>
-							<form action="#" method="POST" role="form">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="All Pet Sitters">
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Any Location">
-								</div>
-								<div class="form-group">
-									<div class="select-style">
-										<select class="form-control">
-											<option>Service Type</option>
-											<option>Pet Sitter</option>
-											<option>Dog Sitter</option>
-											<option>Cat Sitter</option>
-										</select>
-									</div>
-								</div>
-								<button type="submit" class="btn btn-success btn-block">Search</button>
-							</form>
-						</div> -->
 					</div>
 				</div>
 			</section>
@@ -246,7 +168,7 @@
 									<div class="col-xs-6 col-sm-3 col-md-3" data-animation="fadeInLeft" data-animation-delay="0">
 										<div class="job-listing-box">
 											<figure class="job-listing-img">
-												<a href="job-profile.html"><img src="./images/160x160/cat2.jpeg" alt="cat"></a>
+												<a href="/signin"><img src="./images/160x160/cat2.jpeg" alt="cat"></a>
 											</figure>
 											<div class="job-listing-body">
 												<h4 class="name"><a href="job-profile.html">Crookshanks</a></h4>
@@ -262,10 +184,10 @@
 									<div class="col-xs-6 col-sm-3 col-md-3" data-animation="fadeInLeft" data-animation-delay="200">
 										<div class="job-listing-box">
 											<figure class="job-listing-img">
-												<a href="job-profile.html"><img src="./images/160x160/polo.jpeg" alt="dog"></a>
+												<a href="/signin"><img src="./images/160x160/polo.jpeg" alt="dog"></a>
 											</figure>
 											<div class="job-listing-body">
-												<h4 class="name"><a href="job-profile.html">Rex</a></h4>
+												<h4 class="name"><a href="/signin">Rex</a></h4>
 											</div>
 											<footer class="job-listing-footer">
 												<ul class="meta">
@@ -282,10 +204,10 @@
 									<div class="col-xs-6 col-sm-3 col-md-3" data-animation="fadeInLeft" data-animation-delay="400">
 										<div class="job-listing-box">
 											<figure class="job-listing-img">
-												<a href="job-profile.html"><img src="./images/160x160/fish.jpeg" alt="fish"></a>
+												<a href="/signin"><img src="./images/160x160/fish.jpeg" alt="fish"></a>
 											</figure>
 											<div class="job-listing-body">
-												<h4 class="name"><a href="job-profile.html">Jaws</a></h4>
+												<h4 class="name"><a href="/signin">Jaws</a></h4>
 											</div>
 											<footer class="job-listing-footer">
 												<ul class="meta">
@@ -298,10 +220,10 @@
 									<div class="col-xs-6 col-sm-3 col-md-3" data-animation="fadeInLeft" data-animation-delay="600">
 										<div class="job-listing-box">
 											<figure class="job-listing-img">
-												<a href="job-profile.html"><img src="./images/160x160/lizard.jpeg" alt="lizard"></a>
+												<a href="/signin"><img src="./images/160x160/lizard.jpeg" alt="lizard"></a>
 											</figure>
 											<div class="job-listing-body">
-												<h4 class="name"><a href="job-profile.html">Godzilla</a></h4>
+												<h4 class="name"><a href="/signin">Godzilla</a></h4>
 											</div>
 											<footer class="job-listing-footer">
 												<ul class="meta">
@@ -320,11 +242,11 @@
 								<div class="owl-carousel owl-theme owl-featured-listings">
 									<div class="job-listing-box featured">
 										<figure class="job-listing-img">
-											<a href="job-profile.html"><img src="./images/700x700/porkchop.jpg" alt="porkchop"></a>
+											<a href="/signin"><img src="./images/700x700/porkchop.jpg" alt="porkchop"></a>
 										</figure>
 										<div class="job-listing-holder">
 											<div class="job-listing-body">
-												<h4 class="name"><a href="job-profile.html">Porkchop</a></h4>
+												<h4 class="name"><a href="/signin">Porkchop</a></h4>
 												<p>I am anthropomorphic yet cannot speak languages.</p>
 											</div>
 											<footer class="job-listing-footer">
@@ -338,11 +260,11 @@
 									</div>
 									<div class="job-listing-box featured">
 										<figure class="job-listing-img">
-											<a href="job-profile.html"><img src="http://placehold.it/708x671" alt=""></a>
+											<a href="/signin"><img src="http://placehold.it/708x671" alt=""></a>
 										</figure>
 										<div class="job-listing-holder">
 											<div class="job-listing-body">
-												<h4 class="name"><a href="job-profile.html">John Doe</a></h4>
+												<h4 class="name"><a href="/signin">John Doe</a></h4>
 												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 											</div>
 											<footer class="job-listing-footer">
@@ -356,11 +278,11 @@
 									</div>
 									<div class="job-listing-box featured">
 										<figure class="job-listing-img">
-											<a href="job-profile.html"><img src="http://placehold.it/708x671" alt=""></a>
+											<a href="/signin"><img src="http://placehold.it/708x671" alt=""></a>
 										</figure>
 										<div class="job-listing-holder">
 											<div class="job-listing-body">
-												<h4 class="name"><a href="job-profile.html">John Doe</a></h4>
+												<h4 class="name"><a href="/signin">John Doe</a></h4>
 												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 											</div>
 											<footer class="job-listing-footer">
@@ -420,8 +342,6 @@
 									</div>
 								</div>
 
-								<!-- <a href="job-list.html" class="btn btn-primary">View All Pet Sitters <i class="fa fa-arrow-circle-o-right fa-lg fa-right"></i></a> -->
-
 							</div>
 						</div>
 
@@ -465,68 +385,11 @@
 									</div>
 								</div>
 
-								<!-- <a href="job-post-profile.html" class="btn btn-primary">Start Here <i class="fa fa-arrow-circle-o-right fa-lg fa-right"></i></a> -->
-
 							</div>
 						</div>
 
 					</section>
 					<!-- Section / End -->
-
-
-					<!-- Light Section -->
-					<!-- <section class="section-light section-nomargin">
-						<div class="title-bordered" data-animation="fadeInUp" data-animation-delay="0">
-							<h2>Why Choose Us <small>Main Features</small></h2>
-						</div>
-						<div class="row">
-							<div class="col-md-3" data-animation="fadeInDown" data-animation-delay="0">
-								<div class="icon-box filled centered lg circled icon-box-animated-inverse">
-									<div class="icon">
-										<i class="entypo chat"></i>
-									</div>
-									<div class="icon-box-body">
-										<h3>Care Advices</h3>
-										<p>Proin gravida nibh vel velit auctor aliquet. Aenean tempor auctor sollicit.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3" data-animation="fadeInDown" data-animation-delay="200">
-								<div class="icon-box filled centered lg circled icon-box-animated-inverse">
-									<div class="icon">
-										<i class="entypo heart"></i>
-									</div>
-									<div class="icon-box-body">
-										<h3>Easy to Use</h3>
-										<p>Proin gravida nibh vel velit auctor aliquet. Aenean tempor auctor sollicit.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3" data-animation="fadeInDown" data-animation-delay="400">
-								<div class="icon-box filled centered lg circled icon-box-animated-inverse">
-									<div class="icon">
-										<i class="entypo light-bulb"></i>
-									</div>
-									<div class="icon-box-body">
-										<h3>Our Tips</h3>
-										<p>Proin gravida nibh vel velit auctor aliquet. Aenean tempor auctor sollicit.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="icon-box filled centered lg circled icon-box-animated-inverse" data-animation="fadeInDown" data-animation-delay="600">
-									<div class="icon">
-										<i class="entypo thumbs-up"></i>
-									</div>
-									<div class="icon-box-body">
-										<h3>Lots of Choice</h3>
-										<p>Proin gravida nibh vel velit auctor aliquet. Aenean tempor auctor sollicit.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section> -->
-					<!-- Light Section / End -->
 
 					<!-- Section -->
 					<section class="section section-nomargin">
@@ -640,7 +503,7 @@
 									<div class="widget-content">
 										<p> Get the latest and greatest updates from No Worries Pet Sitting! </p>
 
-										<form action="php/newsletter-form.php" method="POST" id="newsletter-form">
+										<!-- <form action="php/newsletter-form.php" method="POST" id="newsletter-form"> -->
 
 											<div class="alert alert-success hidden" id="newsletter-alert-success">
 												<strong>Success!</strong> Thank you for subscribing.
@@ -678,7 +541,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-6 col-md-4">
-								Copyright &copy; 2018  <a href="index.html">No Worries Pet Sitting</a> &nbsp;
+								Copyright &copy; 2018  <a href="/">No Worries Pet Sitting</a> &nbsp;
 							</div>
 							<div class="col-sm-6 col-md-8">
 								<div class="social-links-wrapper">
@@ -701,8 +564,6 @@
 		</div>
 		<!-- Main / End -->
 	</div>
-
-
 
 
 
@@ -748,7 +609,5 @@
 		});
 	</script>
 
-
-
-</body>
+ </body>
 </html>
