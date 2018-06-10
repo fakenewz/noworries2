@@ -3,7 +3,7 @@ var path = require("path");
  
 exports.signup = function(req, res) {
    // res.render('Sign_Up');
-   res.sendFile(path.join(__dirname, "../views/PetSitter-HTML-Working w_ tags/HTML/Sign Up.html"));
+   res.sendFile(path.join(__dirname, "../views/PetSitter-HTML-Working w_ tags/HTML/SignUp.html"));
 }
 
 exports.signin = function(req, res) {

@@ -16,7 +16,7 @@ module.exports = function(app) {
  // });
 
   app.get("/signup", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/PetSitter-HTML-Working w_ tags/HTML/Sign Up.html"),{});
+    res.sendFile(path.join(__dirname, "../views/PetSitter-HTML-Working w_ tags/HTML/SignUp.html"),{});
   });
 
   app.get("/signin", function(req, res) {
