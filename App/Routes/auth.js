@@ -33,6 +33,11 @@ module.exports = function(app, passport) {
          {
            [Op.ne]: 
            req.user.ownerorsitter
+         },
+         usercity: 
+         {
+           [Op.eq]: 
+           req.user.usercity
          }
        }
       }).then(function(dbperson) {
