@@ -4,7 +4,6 @@
     "password": "Steve2627!",
     "database": "petSitter",
     "host": "127.0.0.1",
-    "port": 3306,
     "dialect": "mysql"
   },
   "test": {
@@ -12,15 +11,13 @@
     "password": "Steve2627!",
     "database": "petsitter",
     "host": "127.0.0.1",
-    "port": 3306,
     "dialect": "mysql"
   },
   "production": {
-    "username": "petapp",
-    "password": "Steve2627!",
-    "database": "petsitter",
-    "host": "127.0.0.1",
-    "port": 3306,
+    "username": "b6c56332048928",
+    "password": "ee1f6fbe",
+    "database": "heroku_453298aac3eb8cd",
+    "host": "us-cdbr-iron-east-04.cleardb.net",
     "dialect": "mysql"
   }
 }
