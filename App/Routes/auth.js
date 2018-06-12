@@ -19,15 +19,47 @@ module.exports = function(app, passport) {
       }
   }
 
+  app.get('/checkLogin', isLoggedIn, function(req,res){
+    console.log('check @@@@@', req.user);
+    res.json({data: req.user});
+  })
+
+  app.get('/grabData/:ownerorsitter/:usercity', function (req, res) {
+    console.log('check !!!!!!', req.params);
+
+    var Sequelize = require('sequelize');
+    const Op = Sequelize.Op
+
+  db.AllUsers.findAll({
+    where: {
+      ownerorsitter: 
+       {
+         [Op.ne]: 
+         req.params.ownerorsitter
+       },
+       usercity: 
+       {
+         [Op.eq]: 
+         req.params.usercity
+       }
+     }
+    }).then(function(dbperson) {
+      console.log("star")
+      res.setHeader('Content-Type', 'text/html');
+
+        res.json({userData: dbperson})
+
+       })
+
+  })
+
      app.get('/dashboard', isLoggedIn, function (req, res) {
 
      console.log("apple");
       var Sequelize = require('sequelize');
       const Op = Sequelize.Op
 
-    console.log("B", req.user.ownerorsitter)
-
-     db.AllUsers.findAll({
+    db.AllUsers.findAll({
       where: {
         ownerorsitter: 
          {
@@ -43,15 +75,9 @@ module.exports = function(app, passport) {
       }).then(function(dbperson) {
         console.log("star")
         res.setHeader('Content-Type', 'text/html');
-     
 
-        for (var i = 0; i < dbperson.length; i++) {
-         res.write("<div style='background-color: tan; color: pink; font-size: x-large; font-weight: bold'>" + "Email: " + dbperson[i].email + "<br>" + "Name: " + dbperson[i].userfullname + "<br>" + "Location: " + dbperson[i].usercity + "<br>" + "Owner or Sitter: " + dbperson[i].ownerorsitter + "<br><br><br></div>");
-      
-        }
-    
-       res.end();
+          res.sendFile(path.join(__dirname, "../views/PetSitter-HTML-Working w_ tags/HTML/dashboard.html"));
 
-      });
+         })
     });
   }

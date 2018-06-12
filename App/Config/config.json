@@ -1,15 +1,15 @@
 {
   "development": {
     "username": "petapp",
-    "password": "",
+    "password": "noworries",
     "database": "petSitter",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "petapp",
-    "password": "",
-    "database": "petsitter",
+    "password": "noworries",
+    "database": "petSitter",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

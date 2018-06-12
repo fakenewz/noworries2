@@ -29,9 +29,9 @@ require('./App/Config/passport/passport')(passport, db.AllUsers);
 app.use(bodyParser.urlencoded({ extended: true })); 
 app.use(bodyParser.json()); 
 
-app.use(express.static("app/public"));
+app.use(express.static("App/public"));
 app.use(express.static(__dirname + '/App/views/PetSitter-HTML-Working w_ tags/HTML'));
-
+app.use(express.static(__dirname + '/App/views'));
 
 require("./App/Routes/api-routes")(app);
 require("./App/Routes/html-routes")(app);

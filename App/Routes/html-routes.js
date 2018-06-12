@@ -1,6 +1,6 @@
 var path = require("path");
 
-// Routes
+
 module.exports = function(app) {
 
   app.get("/addsitterinformation", function(req, res) {
@@ -11,10 +11,6 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../Public/survey_petowner.html"));
   });
 
-  //app.get("/appointments", function(req, res) {
-   // res.sendFile(path.join(__dirname, "../calendar/calendar.html"));
- // });
-
   app.get("/signup", function(req, res) {
     res.sendFile(path.join(__dirname, "../views/PetSitter-HTML-Working w_ tags/HTML/SignUp.html"),{});
   });
@@ -24,7 +20,8 @@ module.exports = function(app) {
   });
 
   app.get("/dashboard", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/dashboard.html"),{});
+    console.log('We hit route@@@@');
+    res.sendFile(path.join(__dirname, "../views/PetSitter-HTML-Working w_ tags/HTML/dashboard.html"),{});
   });
 
   app.get("/", function(req, res) {
