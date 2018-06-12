@@ -1,14 +1,13 @@
 var path = require("path");
 
-
 module.exports = function(app) {
 
-  app.get("/addsitterinformation", function(req, res) {
-    res.sendFile(path.join(__dirname, "../Public/survey_petsitter.html"));
-  });
+  // app.get("/addsitterinformation", function(req, res) {
+  //   res.sendFile(path.join(__dirname, "../Public/survey_petsitter.html"));
+  // });
 
-  app.get("/addownerinformation", function(req, res) {
-    res.sendFile(path.join(__dirname, "../Public/survey_petowner.html"));
+  app.get("/addpetinformation", function(req, res) {
+    res.sendFile(path.join(__dirname, "../views/PetSitter-HTML-Working w_ tags/HTML/survey_petowner.html"));
   });
 
   app.get("/signup", function(req, res) {

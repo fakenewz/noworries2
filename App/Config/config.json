@@ -2,14 +2,14 @@
   "development": {
     "username": "petapp",
     "password": "noworries",
-    "database": "petSitter",
+    "database": "",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "petapp",
     "password": "noworries",
-    "database": "petSitter",
+    "database": "",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
