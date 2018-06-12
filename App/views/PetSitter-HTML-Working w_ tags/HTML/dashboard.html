@@ -25,6 +25,7 @@
 	<!-- CSS
 	================================================== -->
 	<!-- Base + Vendors CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="css/fonts/entypo/css/entypo.css">
@@ -149,10 +150,10 @@
 
 				<div class="card">
 					<div class="card-header">
-						<span id="pleaseWORK" style='font-weight: bold; color: gray'>Click here to see available results!</span>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<a href="/addpetinformation"><span style='font-weight: bold; color: gray'>Click here to add pets if you're an owner!</span></a>
-					</div>
+						<i class="fas fa-paw"></i><span id="pleaseWORK" style='font-weight: bold; color: gray'>Click here to see available results!</span><i class="fas fa-paw"></i>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<i class="fas fa-paw"></i><a href="/addpetinformation"><span style='font-weight: bold; color: gray'>Click here to add pets if you're an owner!</span></a><i class="fas fa-paw"></i>
+						<br></div>
 					<div class="card-body" id="user-section">
 				
 					</div>
@@ -318,11 +319,11 @@ $.ajax({
 
 	console.log("all the", parseA.userData[i])
 
-	$("#another-user-" + i).append("<h3>Email: " + parseA.userData[i].email + "</h2>");
-	$("#another-user-" + i).append("<h3>Name: " + parseA.userData[i].userfullname + "</h4>");
-	$("#another-user-" + i).append("<h3>Location: " + parseA.userData[i].usercity + "</h4>");
-	$("#another-user-" + i).append("<h3>Owner or Sitter: " + parseA.userData[i].ownerorsitter + "</h4>");
-	$("#another-user-" + i).append("<br>~~~<br><br>");
+	$("#another-user-" + i).append("<h3><b>Email: </b>" + parseA.userData[i].email + "</h2>");
+	$("#another-user-" + i).append("<h3><b>Name: </b>" + parseA.userData[i].userfullname + "</h4>");
+	$("#another-user-" + i).append("<h3><b>Location: </b>" + parseA.userData[i].usercity + "</h4>");
+	$("#another-user-" + i).append("<h3><b>Owner or Sitter: </b>" + parseA.userData[i].ownerorsitter + "</h4>");
+	$("#another-user-" + i).append("<br><br><br>");
   }
 
 })
